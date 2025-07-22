@@ -1,0 +1,64 @@
+Objetivo:
+Identificar regiões do genoma da Escherichia coli Sakai — genoma principal e os 2 plasmídeos — utilizando a sequência única (NÃO utilizar a segmentada). Encontrar as regiões que potencialmente codificam proteínas.
+
+Analisar e identificar, em cada segmento e em cada frame da sequência traduzida do genoma da E. coli Sakai para proteínas (código 1 letra por aminoácido), e gravar em 6 arquivos FASTA correspondentes aos frames 1, 2, 3, 4, 5 e 6.
+
+Utilizar a tabela do código genético para identificar o aminoácido iniciador e o de terminação.
+
+Linguagem: Python (utilizar dicionário para a tabela do código genético).
+
+Genomas disponíveis no GenBank:
+
+BA000007.3 — Escherichia coli O157:H7 str. Sakai DNA, genoma completo (genoma principal)
+
+AB011549.2 — E. coli O157:H7 str. Sakai plasmídeo pO157 DNA, sequência completa (plasmídeo 1)
+
+AB011548.2 — E. coli O157:H7 str. Sakai plasmídeo pOSAK1 DNA, sequência completa (plasmídeo 2)
+
+Entrega:
+
+Resposta dissertativa:
+Esta atividade faz parte da operação chamada "Anotação" no sequenciamento do genoma. Após esta etapa, qual é a próxima operação a ser realizada para finalizar a anotação? Explique como esta atividade está relacionada com essa próxima etapa e justifique sua resposta.
+
+Código Python que realiza a análise conforme descrito.
+
+Dezoito (18) arquivos FASTA com as potenciais sequências codificadoras de proteínas, com o cabeçalho identificando:
+
+Código do genoma (GenBank)
+
+Frame utilizado
+
+Número da proteína dentro do segmento
+
+Localização no genoma (intervalo base x1..y1)
+
+Número do RA
+
+Distribuição dos arquivos:
+
+6 arquivos para o genoma principal (BA000007.3)
+
+6 arquivos para o plasmídeo 1 (AB011549.2)
+
+6 arquivos para o plasmídeo 2 (AB011548.2)
+
+Sugestão de nomes para arquivos:
+
+Genoma principal:
+gc_frame1_ativ5_{RA}.fasta até gc_frame6_ativ5_{RA}.fasta
+
+Plasmídeo 1:
+p1_frame1_ativ5_{RA}.fasta até p1_frame6_ativ5_{RA}.fasta
+
+Plasmídeo 2:
+p2_frame1_ativ5_{RA}.fasta até p2_frame6_ativ5_{RA}.fasta
+
+Exemplo de cabeçalho FASTA:
+
+css
+Copiar
+Editar
+>BA000007.3, Frame 1, proteína 1, [location=x1..y1], {RA}
+MSDHEGG.....................................................
+>BA000007.3, Frame 1, proteína 2, [location=x2..y2], {RA}
+MSDHEGG.....................................................
