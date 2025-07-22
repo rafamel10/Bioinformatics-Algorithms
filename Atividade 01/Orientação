@@ -1,1 +1,62 @@
+ Atividade - Contagem de nucleotídeos em arquivo FASTA
+📌 Problema
+Uma string é uma coleção de símbolos selecionados de um alfabeto e transformada em uma palavra.
+O comprimento da string é o número de símbolos que ela contém.
+Por exemplo, uma string de DNA com comprimento 18, cujo alfabeto contém os símbolos A, C, G e T, é:
 
+arduino
+Copiar
+Editar
+"ATGCTTCAGAAAGGTCTT"
+📄 Dado
+Arquivo de entrada: teste1.fasta
+
+Tarefa: Contar o número de ocorrências de A, T, C e G, além do total de nucleotídeos.
+
+Gerar um arquivo de saída .txt com o seguinte conteúdo:
+
+Primeira linha: Nome do gene (primeira linha do cabeçalho do FASTA)
+
+Linhas seguintes: quantidade de cada nucleotídeo e o total.
+
+⚠️ Restrições:
+NÃO utilizar a biblioteca BioPython!
+Ela será usada em atividades futuras.
+
+✅ Submissão
+Você deve submeter os seguintes itens:
+
+A) Algoritmo:
+Explicação em texto (não é pseudocódigo) descrevendo:
+
+Como importar o arquivo teste1.fasta
+
+Como manipular os dados para contar os nucleotídeos
+
+Como gerar o arquivo de saída .txt
+
+B) Programa/Código em Python:
+Arquivo .py funcional, utilizando apenas bibliotecas padrão do Python.
+
+C) Resultado:
+Arquivo .txt com o resultado formatado conforme o modelo abaixo.
+
+📌 Exemplo de Resultado Esperado
+vbnet
+Copiar
+Editar
+-------------------
+Nome do gene: teste Atividade 1
+A: 20
+C: 12
+G: 17
+T: 21
+Total: 70 nucleotídeos
+-------------------
+📂 Resumo dos arquivos a entregar:
+
+algoritmo.txt (ou no README)
+
+contagem_nucleotideos.py
+
+resultado.txt
