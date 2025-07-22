@@ -1,0 +1,62 @@
+# 📌 TEORIA
+
+As proteínas são moléculas essenciais para o funcionamento do nosso organismo — são conjuntos de aminoácidos ligados entre si por ligações peptídicas.  
+A sequência de aminoácidos de uma proteína é determinada pela disposição das bases nitrogenadas em um mRNA, que é produzido a partir de uma molécula de DNA.  
+Portanto, o DNA fornece as informações para a produção de proteínas.
+
+Figura 1:  
+DNA → RNA → Proteína
+
+O código genético define a relação entre as trincas (códons) encontradas no RNAm e os aminoácidos correspondentes.  
+Os códons são formados pelas bases nitrogenadas A, U, C e G.
+
+Figura 2: Transcrição e tradução
+
+Figura 3a: Frames de Tradução 1 a 3 → RNA → Proteína  
+Figura 3b: Frames de Tradução 1 a 6 → DNA → Proteína  
+Figura 3c: Frames de Tradução 1 a 6 → DNA → Proteína (outra ilustração)
+
+Tabela do Código Genético
+
+---
+
+# 📌 OBJETIVO EM PYTHON
+
+Saída:  
+- Arquivo FASTA de sequência RNA manipulada  
+- Tradução de DNA → RNA → Proteína (usando dicionário Python com a tabela do código genético)
+
+---
+
+# 📌 PROBLEMA
+
+1️⃣ Use os segmentos dos genes da E.coli da Atividade 4.
+
+2️⃣ Transcreva:  
+   - DNA → RNA (pode usar função do BioPython ou alterar as letras manualmente).  
+   - Salve as sequências RNA em arquivo FASTA, adicionando "RNA" ao final de cada cabeçalho.
+
+3️⃣ Traduza RNA → Proteína:  
+   - Usar dicionário Python com a Tabela do Código Genético.  
+   - Não usar função pronta do BioPython para traduzir — apenas para ler/escrever FASTA se desejar.  
+   - Faça a tradução para os 6 frames de leitura.  
+   - Salve cada frame em arquivo FASTA separado: Frame1.fasta, Frame2.fasta, ..., Frame6.fasta.  
+   - Inclua "Proteína" ao final de cada cabeçalho.
+
+---
+
+# 📌 ENVIO
+
+1 – Dissertativa  
+- A) As sequências de DNA que estamos convertendo em aminoácidos são Open Reading Frames? Justifique.  
+- B) Qual a razão de ler os 6 Frames de uma sequência? O que estamos procurando?
+
+2 – Código  
+- Código Python que:  
+  - Transcreve DNA → RNA  
+  - Traduz RNA → Proteína (6 frames)  
+  - Usa dicionário para tradução
+
+3 – Arquivos FASTA  
+- Sakai_RNA.fasta (sequências de RNA com "RNA" no cabeçalho)  
+- 6 arquivos FASTA das sequências de aminoácidos/proteína, um para cada frame de leitura, com "Proteína" no cabeçalho
