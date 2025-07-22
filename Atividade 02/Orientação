@@ -1,1 +1,72 @@
+Contagem de nucleotídeos com BioPython
+📌 Descrição
+Nesta atividade, você irá importar sequências de DNA a partir de arquivos FASTA e contabilizar o número de nucleotídeos A, T, C, G e o total, utilizando a biblioteca BioPython.
 
+📄 Etapas
+1️⃣ Importar arquivos FASTA do E. coli Sakai
+Dados a importar:
+
+Genoma completo
+
+Plasmídio 1
+
+Plasmídio 2
+
+Utilize a biblioteca BioPython (Bio.SeqIO) para ler os arquivos.
+
+Entenda a estrutura do objeto retornado (por exemplo, SeqRecord).
+
+2️⃣ Contabilizar nucleotídeos
+Usar as sequências carregadas para contar:
+
+Número de A
+
+Número de C
+
+Número de G
+
+Número de T
+
+Total de nucleotídeos
+
+3️⃣ Gerar arquivo de saída
+Crie três arquivos .csv de saída:
+
+Um para o Genoma completo
+
+Um para o Plasmídio 1
+
+Um para o Plasmídio 2
+
+Cada arquivo deve conter:
+
+1ª linha: Identificação do genoma/plasmídio
+
+2ª linha: Cabeçalho A,C,G,T,Total
+
+3ª linha: Contagem de cada nucleotídeo
+
+Dica: Formato CSV permite abrir facilmente em planilhas como Excel ou Google Sheets.
+
+4️⃣ Responder perguntas teóricas
+Inclua um arquivo texto (respostas.txt) com as respostas:
+
+Pergunta 1: O que diferencia a E. coli cepa SAKAI das demais?
+
+Pergunta 2: O que é um plasmídeo? Qual sua função em bactérias? Qual sua aplicação prática?
+
+✅ O que entregar
+A) Código Python (atividade2_biopython.py)
+
+B) Arquivos .csv com os resultados:
+
+genoma_completo.csv
+
+plasmidio1.csv
+
+plasmidio2.csv
+
+C) Respostas (respostas.txt)
+
+📌 Observação:
+Não há algoritmo narrativo nesta atividade, apenas o código, os resultados e as respostas teóricas.
