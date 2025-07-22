@@ -1,0 +1,76 @@
+Análise de sequências identificadas (Blast/GenBank e String)
+
+Objetivo:
+Escolher 5 sequências identificadas na Atividade 5 e analisar utilizando as ferramentas Blast (NCBI GenBank) e String.
+
+a) Atividade Blast
+Selecionar 5 sequências de proteínas com mais de 80 aminoácidos:
+
+3 sequências do genoma principal, cada uma de um frame diferente;
+
+1 sequência do plasmídeo 1 (frame a escolher);
+
+1 sequência do plasmídeo 2 (frame a escolher).
+
+Montar um arquivo FASTA contendo essas 5 sequências, nomeando-o como:
+seq_identificadas.fasta
+
+No Blastp (protein-protein):
+
+Comparar as sequências com organismo: E. coli
+
+Comparar as sequências com organismo: human
+
+Análise:
+
+Verificar se as sequências alinharam com genes já identificados anteriormente.
+
+Confirmar se elas constam no genoma anotado (Ecoli_Sakai_cds_from_genomic.fna) ou nos plasmídeos.
+
+Montar um arquivo FASTA contendo as sequências submetidas e as correspondentes do genoma anotado, nomeando como:
+Seq_encontado_seq_anotado.fasta
+
+Observação:
+Se algum alinhamento indicar [protein=hypothetical protein], substituir a sequência por outra proteína identificada e refazer o Blast.
+
+Questão dissertativa:
+Explique o significado dos parâmetros do alinhamento usados na análise das sequências pelo Blastp/GenBank, incluindo:
+
+Max Score
+
+Total Score
+
+Query Cover
+
+E value
+
+Percent Identity (Per. Ident)
+
+Inclua também a análise realizada com a ferramenta String.
+
+b) Atividade no String (https://string-db.org/)
+Submeter as proteínas contra o organismo E. coli Sakai.
+
+Fazer relatório contendo:
+
+Imagem da rede metabólica associada à proteína e comentários;
+
+Função da proteína e seu papel dentro da rede metabólica (explicação detalhada);
+
+Explicação da função geral dessa rede metabólica na E. coli (detalhes);
+
+Indicar as fontes das informações utilizadas.
+
+Entregáveis (via Classroom):
+Arquivo seq_identificadas.fasta
+
+Arquivo Seq_encontado_seq_anotado.fasta
+
+Relatório com análise da ferramenta String
+
+Recursos úteis:
+Blast help:
+https://blast.ncbi.nlm.nih.gov/doc/blast-help/
+
+Blastp (protein-protein):
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
