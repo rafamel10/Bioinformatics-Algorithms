@@ -1,0 +1,100 @@
+Cálculo de Temperatura de Anelamento (Melting) em DNA
+📌 Problema
+Dado um arquivo FASTA com várias sequências de DNA da E. coli Sakai (Ecoli_Sakai_cds_from_genomic.fna), você deve:
+
+Ler todas as sequências.
+
+Realizar cálculos relacionados à composição das sequências.
+
+Gerar gráficos com os resultados.
+
+🎯 Objetivos
+Ler o arquivo FASTA contendo 5155 sequências potenciais de genes da E. coli Sakai.
+Exemplo de formato: Ecoli_Sakai_cds_from_genomic.fna.
+
+Calcular, para cada sequência:
+
+Número total de nucleotídeos A, T, C e G.
+
+Conteúdo GC (fração GC).
+
+Temperatura de anelamento (melting) considerando o conteúdo GC e concentração de [Na+] = 100 mM.
+
+Referências para fórmula e conceitos:
+
+BioMath Tutorial - DNA melting temperature
+
+Vídeo explicativo
+
+Gerar saídas em CSV:
+
+Arquivo com contagem dos nucleotídeos de cada sequência.
+
+Arquivo com conteúdo GC de cada sequência.
+
+Arquivo com temperatura de melting e conteúdo GC em % de cada sequência.
+
+Gerar gráfico de dispersão (scatter plot):
+
+Eixo X (abscissa): Temperatura de Melting (Tm)
+
+Eixo Y (ordenada): Conteúdo GC (%)
+
+Cada ponto representa uma sequência.
+
+✅ Itens obrigatórios para entrega
+Item	Descrição
+A)	Algoritmo narrativo: texto descritivo explicando passo a passo como o programa funciona (Ex.: leitura do arquivo, processamento, cálculos, exportação e plotagem).
+B)	Pseudo-código: sequência de passos lógicos em forma estruturada.
+C)	Código Python: .ipynb ou .py usando Bio.SeqIO, math, matplotlib e outras bibliotecas padrão.
+D)	Resultados: 4 arquivos:
+
+D.1) Dados_das_sequencias.csv — Número de A, T, C, G e total de cada sequência.
+
+D.2) Conteudo_GC.csv — Conteúdo GC de cada sequência (fração, 3 casas decimais).
+
+D.3) Temperatura_x_GC.csv — Tm (3 casas decimais) na 1ª coluna e conteúdo GC (%) na 2ª coluna (2 casas decimais).
+
+D.4) Imagem do gráfico scatter (GC_vs_Tm.png), com:
+
+Eixo X: Temperatura de Melting.
+
+Eixo Y: Conteúdo GC (%).
+
+Título: Título explicativo e seu nome no subtítulo.
+
+🛠️ Requisitos técnicos
+📚 Bibliotecas sugeridas:
+
+math (funções matemáticas)
+
+Bio.SeqIO (BioPython)
+
+matplotlib (gráficos)
+
+list, len, csv (nativos do Python)
+
+Funções úteis:
+
+SeqIO.parse() para iterar pelas sequências FASTA.
+
+Funções básicas para contar letras (str.count).
+
+Fórmula de Tm do tutorial (BioMath) usando [Na+] = 100 mM.
+
+📂 Formato dos arquivos de saída
+Arquivo	Descrição
+Dados_das_sequencias.csv	Header, A, T, C, G, Total
+Conteudo_GC.csv	Header, GC_fraction (3 casas decimais)
+Temperatura_x_GC.csv	Tm (°C), GC (%) (Tm com 3 casas decimais, GC com 2 casas decimais)
+Gráfico	Scatter plot com Tm (°C) no eixo X e GC (%) no eixo Y
+
+📎 Links úteis
+Formato de arquivos de sequência:
+Comparação de formatos
+
+Tutorial Tm:
+BioMath Linear Functions Applications
+
+Vídeo:
+Temperatura de Melting - YouTube
