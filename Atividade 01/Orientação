@@ -4,9 +4,6 @@ Uma string é uma coleção de símbolos selecionados de um alfabeto e transform
 O comprimento da string é o número de símbolos que ela contém.
 Por exemplo, uma string de DNA com comprimento 18, cujo alfabeto contém os símbolos A, C, G e T, é:
 
-arduino
-Copiar
-Editar
 "ATGCTTCAGAAAGGTCTT"
 📄 Dado
 Arquivo de entrada: teste1.fasta
